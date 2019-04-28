@@ -63,7 +63,7 @@ model = load_model('my_model.h5')
 ##
 import keras.preprocessing.text
 
-text = np.array(['this is just some random, stupid text'])
+text = np.array(['this is Hao'])
 print(text.shape)
 pred = tokenizer.texts_to_sequences(text)
 pred=pad_sequences(pred,maxlen=28)

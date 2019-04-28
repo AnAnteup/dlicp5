@@ -60,8 +60,10 @@ from keras.models import load_model
 
 model.save('my_model.h5')
 model = load_model('my_model.h5')
+##
+import keras.preprocessing.text
 
-text = np.array(['A lot of good things are happening. We are respected again throughout the world, and that is a great thing.@realDonaldTrump'])
+text = np.array(['A lot of good things are happening. We are respected again throughout the world, and that is a great thing'])
 print(text.shape)
 pred = tokenizer.texts_to_sequences(text)
 pred=pad_sequences(pred,maxlen=28)
